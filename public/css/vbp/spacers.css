@@ -1,0 +1,25 @@
+.spacer{
+    width: 100%;
+    height: 100px;
+}
+
+.spacer-150-100{
+    width: 100%;
+    height: 150px;
+}
+
+@media screen and (max-width: 800px) {
+    .spacer {
+        width: 100%;
+        height: 100px;
+    }
+
+    .spacer-150-100 {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+.row-corrector{
+    max-width: 99%;
+}

@@ -1,0 +1,13 @@
+.artist-photo-section div {
+    height: 300px;
+}
+
+.artist-photo-section img {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.short-description-container {
+    margin-top: 70px;
+    max-width: 99%;
+}
