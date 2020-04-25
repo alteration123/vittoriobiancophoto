@@ -1,6 +1,18 @@
 <!-- Inclusione CSS -->
 <link rel="stylesheet" href="{{ url('css/vbp/home/gallery.css') }}">
 
+<style>
+    .div-img {
+        background-origin: border-box;
+        background-repeat: round;
+    }
+
+    .div-img img {
+        width: 100%;
+        visibility: hidden
+    }
+</style>
+
 <!-- Code -->
 <div class="home-gallery-preview gallery-preview carousel-global">
     <div id="carouselGalleryPreview" class="carousel slide" data-ride="carousel">
@@ -11,13 +23,14 @@
                 @foreach($galleriesJson as $gallery)
                     <div class="carousel-item {{ $gallery['classy'] }}">
                         <div class="row" >
-                            <div class="col-sm-12 col-lg-1"></div>
+                            <div class="col-lg-1"></div>
                             <div class="col-sm-12 col-lg-10">
                                 <div class="hovereffect">
-                                    <div class="border border-black img-border"></div>
-                                        <img class="img-fluid shadow bg-white" src="{{url('/images/gallery_preview/' . $gallery['file'])}}" alt="Slide {{ $gallery['index'] }}" alt="Card image cap">
+                                    <div class="div-img img-fluid img-div border border-black" style="background-image: url({{ asset('/images/gallery_preview/' . $gallery['file']) }})" alt="Slide {{ $gallery['index'] }}" alt="Card image cap">
+                                        <img src="{{url('/images/gallery_preview/' . $gallery['file'])}}">
+                                    </div>
 
-                                        <div class="overlay">
+                                    <div class="overlay">
                                         <h2>{{ $gallery['name'] }}</h2>
                                         <a class="info" href="#">Visita</a>
                                     </div>
