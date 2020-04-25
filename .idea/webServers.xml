@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="362ccdbc-c17a-45dc-92b9-42afe40cc6e6" name="laradock" url="http://localhost">
+        <fileTransfer host="localhost" port="13203" rootFolder="/var/www/laravel" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="13203" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
