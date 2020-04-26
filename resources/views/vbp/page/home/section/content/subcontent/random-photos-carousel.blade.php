@@ -29,8 +29,8 @@
                 @foreach($randomFour as $randomPhoto)
                     <!--Slide-->
                             <div class="col-md-3 mb-3">
-                                <div class="carousel-custom-card">
-                                    <img class="zoom img-fluid carousel-custom-image" src="{{url('/images/galleria/' . $randomPhoto['file'])}}" alt="Card image cap">
+                                <div class="div-with-background-image" style="background-image: url({{ asset('/images/galleria/' . $randomPhoto['file']) }})" alt="Slide {{ $randomPhoto['index'] }}" alt="Card image cap">
+                                    <img src="{{url('/images/galleria/' . $randomPhoto['file'])}}">
                                 </div>
                             </div>
                     <!--/.Slide-->

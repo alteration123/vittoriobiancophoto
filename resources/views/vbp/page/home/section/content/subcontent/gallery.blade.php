@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="{{ url('css/vbp/home/gallery.css') }}">
 
 <style>
+
     .div-img {
         background-origin: border-box;
         background-repeat: round;
@@ -9,8 +10,9 @@
 
     .div-img img {
         width: 100%;
-        visibility: hidden
+        visibility: hidden;
     }
+
 </style>
 
 <!-- Code -->

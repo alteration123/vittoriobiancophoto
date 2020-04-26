@@ -6,20 +6,6 @@
     }
 }
 
-.random-photo-carousel .carousel-custom-card {
-    flex-direction: column;
-    min-width: 0;
-    width: 100%;
-    word-wrap: break-word;
-    height: 300px;
-}
-
-.random-photo-carousel .carousel-custom-card img {
-    max-height: 100%;
-    max-width: 100%;
-    text-align: center;
-}
-
 
 .random-photo-carousel .controls {
     text-align: center;
@@ -29,10 +15,16 @@
     display: inline-flex;
 }
 
-.random-photo-carousel .border {
-    border: 5px solid #dee2e6!important;
+.random-photo-carousel .div-with-background-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    display:inline-block;
+    text-align: center;
+    background-origin: border-box;
 }
 
-.random-photo-carousel .border-dark {
-    border-color: black!important;
+.random-photo-carousel .div-with-background-image img {
+    max-height: 300px;
+    visibility: hidden;
+    max-width: 100%;
 }
